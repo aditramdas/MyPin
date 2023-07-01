@@ -63,7 +63,7 @@ function Loc() {
           <p className="Loc2">Location</p>
         </div>
         <p className="pin">{pin}</p>
-        <p className="address">Thiruvangad,Illathathaazha,Thalassery</p>
+        <p className="address">{address.join(" ")}</p>
         <div className="coordinates">
           <p className="coor1">Coordinates:</p>
           <p className="coor2">
