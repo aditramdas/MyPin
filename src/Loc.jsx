@@ -61,7 +61,7 @@ function Loc() {
         <p className="pin">{pin}</p>
         <p className="address">{address}</p>
         <div className="coordinates">
-          <p className="coor1">Coordinates :</p>
+          <p className="coor1">Coordinates:</p>
           <p className="coor2">
             {latitude} , {longitude}
           </p>
