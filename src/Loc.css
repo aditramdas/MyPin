@@ -56,6 +56,7 @@
     text-align: left;
     position: relative;
     top: 3vh;
+    flex-wrap: wrap;
 }
 .refbut{
     text-decoration: none;
@@ -113,7 +114,13 @@
     position: relative;
     animation-name: mapmov;
     animation-duration: 2s;
-    animation-delay: 5s;
+    animation-delay: 3.5s;
+    animation-iteration-count: infinite;
+}
+.ell{
+    animation-name: ellsiz;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
     animation-iteration-count: infinite;
 }
 .gmap{
@@ -182,4 +189,10 @@
   .imr:active{
     filter: brightness(300%);
  }
-  
+    .ell:hover{
+        filter: brightness(150%);
+        
+    }
+    .ell:active{
+        filter: brightness(300%);
+    }
