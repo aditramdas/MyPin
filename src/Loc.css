@@ -57,6 +57,8 @@
     position: relative;
     top: 3vh;
     flex-wrap: wrap;
+    width: 350px;
+    word-wrap: break-word;
 }
 .refbut{
     text-decoration: none;
@@ -144,6 +146,7 @@
     }
     .address{
         font-size: 20px;
+        width: 300px;
     }
     .Loc0{
         width: 300px;
