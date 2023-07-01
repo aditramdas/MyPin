@@ -4,23 +4,27 @@ import { comp1, comp2, comp3, ellipse, map } from "./assets";
 import { useJsApiLoader, GoogleMap, MarkerF } from "@react-google-maps/api";
 import Geocode from "react-geocode";
 
-const apiKey = import.meta.env.VITE_APP_GMAPS_API_KEY;
-Geocode.setApiKey(apiKey);
-Geocode.setLanguage("en");
 function Loc() {
+  const apiKey = import.meta.env.VITE_APP_GMAPS_API_KEY;
+  Geocode.setApiKey(apiKey);
+  Geocode.setLanguage("en");
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const [address, setAddress] = useState([]);
-  const [pin, setPin] = useState(0);
-  const [refresh, setRefresh] = useState(false);
+  const [pin, setPin] = useState(null);
 
-  const handleRefresh = () => {
-    setRefresh(!refresh);
+  const refreshPage = () => {
+    window.location.reload(false);
   };
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(success, error);
   }, []);
+  useEffect(() => {
+    if (latitude && longitude) {
+      handleGetAddress();
+    }
+  }, [latitude, longitude]);
 
   const handleGetAddress = async () => {
     try {
@@ -35,16 +39,16 @@ function Loc() {
       console.error("Error fetching address:", error);
     }
   };
-  function success(position) {
+  const success = (position) => {
     setLatitude(position.coords.latitude);
     setLongitude(position.coords.longitude);
     handleGetAddress();
     console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-  }
+  };
 
-  function error() {
+  const error = () => {
     console.log("Unable to retrieve your location");
-  }
+  };
   const center = { lat: latitude, lng: longitude };
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: apiKey,
@@ -76,7 +80,7 @@ function Loc() {
             navigator.clipboard.writeText(pin);
           }}
         />
-        <button onClick={handleRefresh} className="refbut">
+        <button onClick={refreshPage} className="refbut">
           <img src={comp2} alt="" className="imr" />
         </button>
         <img
