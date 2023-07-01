@@ -1,0 +1,185 @@
+.Loc{
+    width: 98vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Loc0{
+    position: relative;
+    width: 350px;
+    margin-left: 10vw;
+    margin-top: 140px;
+}
+.LocFirst{
+  display: flex;
+  position: relative;
+  top: 5vh;
+  width: 100%;
+}
+.Loc1{
+    position: relative;
+    font-family: "Nunito";
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 3vh;
+}
+
+.Loc2{
+    position: relative;
+    padding-left: 11px;
+    font-family: "Nunito";
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 0vh;
+}
+
+.pin{
+    font-family: "Nunito";
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    text-align: left;
+    height: 0vh;
+
+}
+.address{
+    font-family: "Nunito";
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.055em;
+    text-align: left;
+    position: relative;
+    top: 3vh;
+}
+.refbut{
+    text-decoration: none;
+    width: 0vh;
+    border: none;
+    background-color: #ffffff00;
+    position: relative;
+    left: -6px;
+}
+.coordinates{
+    display: flex;
+    position: relative;
+    top: 4vh;
+    width: 100%;
+}
+.coor1{
+    position: relative;
+    font-family: "Nunito";
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 3vh;
+}
+.coor2{
+    position: relative;
+    padding-left: 11px;
+    font-family: "Nunito";
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 0vh;
+}
+.icon{
+    position: relative;
+    width: 2vw;
+    margin-left: 4vw;
+    margin-top: 285px;
+}
+.imr{
+    margin-bottom: 27px;
+}
+.map{
+    position: relative;
+    width: 500px;
+    margin-left: 25vw;
+    margin-top: 13vw;
+    
+    
+}
+.mapimg{
+    position: relative;
+    animation-name: mapmov;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+.gmap{
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+    background-color: aliceblue;
+    margin : auto;
+    margin-top: 10vw;
+    margin-bottom: 15vh;
+}
+@media (max-width: 440px) {
+    .Loc1 {
+        font-size: 25px;
+    }
+    .Loc2 {
+        font-size: 25px;
+    }
+    .pin{
+        font-size: 39px;
+    }
+    .address{
+        font-size: 20px;
+    }
+    .Loc0{
+        width: 300px;
+        margin-left: 5vw;
+        margin-top: 100px;
+    }
+    .icon{
+        top: -60px;
+        right: 0vw;
+    }
+    .imr{
+        width: 33px;
+        margin-bottom: 20px;
+    }
+    .refbut{
+        left: -5px;
+    }
+    .map{
+        margin-left: 12vw;
+        margin-top: 10vw;
+    }
+    .coordinates{
+        top: 3vh;
+    }
+    .coor1 {
+        font-size: 20px;
+    }
+    .coor2 {
+        font-size: 20px;
+    }
+  }
+
+  @keyframes mapmov {
+    0% {top: 0vw;}
+    50% {top: 0vw;}
+    75% {top: -20px;}
+    100% {top: 0vw;}
+  }
+  .imr:hover{
+    filter: brightness(150%);
+    
+  }
+  .imr:active{
+    filter: brightness(300%);
+ }
+  
