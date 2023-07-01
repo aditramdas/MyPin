@@ -3,7 +3,7 @@ import comp1 from './Comp1.png';
 import comp2 from './Comp2.png';
 import comp3 from './Comp3.png';
 import ellipse from './Ellipse.png';
-import map from './Map.png';
+import map from './map.png';
 
 
 export {
