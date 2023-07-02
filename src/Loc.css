@@ -71,7 +71,7 @@
 .coordinates{
     display: flex;
     position: relative;
-    top: 1vh;
+    top: 10px;
     width: 100%;
 }
 .coor1{
@@ -106,9 +106,10 @@
 }
 .map{
     position: relative;
-    width: 100px;
+    width: 290px;
     margin: auto;
     margin-top: 13vw;
+    background-color: #bababa;
     
     
 }
