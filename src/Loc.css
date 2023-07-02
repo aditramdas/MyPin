@@ -106,7 +106,7 @@
 }
 .map{
     position: relative;
-    width: 500px;
+    width: 300px;
     margin-left: 25vw;
     margin-top: 13vw;
     
@@ -133,6 +133,8 @@
     margin : auto;
     margin-top: 10vw;
     margin-bottom: 15vh;
+    border-radius: 20px;
+    overflow:hidden;
 }
 @media (max-width: 500px) {
     .Loc1 {
