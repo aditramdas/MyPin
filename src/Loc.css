@@ -106,12 +106,11 @@
 }
 .map{
     position: relative;
-    width: 290px;
+    width: 350px;
+    padding-left: 50px;
     margin: auto;
-    margin-top: 13vw;
-    background-color: #bababa;
-    
-    
+    left: 6vw;
+    margin-top: 190px;
 }
 .mapimg{
     position: relative;
