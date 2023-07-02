@@ -106,7 +106,7 @@
 }
 .map{
     position: relative;
-    width: 300px;
+    width: fit-content;
     margin-left: 25vw;
     margin-top: 13vw;
     
