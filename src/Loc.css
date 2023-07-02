@@ -167,8 +167,12 @@
         left: -5px;
     }
     .map{
-        margin-left: 12vw;
-        margin-top: 10vw;
+        width: 290px;
+        padding-left: 0px;
+        margin: auto;
+        margin-top: 0px;
+        left: 0px;
+        background-color: antiquewhite;
     }
     .coordinates{
         top: 1vh;
