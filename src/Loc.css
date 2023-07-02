@@ -55,7 +55,7 @@
     letter-spacing: 0.055em;
     text-align: left;
     position: relative;
-    top: 3vh;
+    top: 20px;
     flex-wrap: wrap;
     width: 350px;
     word-wrap: break-word;
@@ -107,7 +107,7 @@
 .map{
     position: relative;
     width: 100px;
-    margin-left: 25vw;
+    margin: auto;
     margin-top: 13vw;
     
     
