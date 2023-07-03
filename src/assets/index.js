@@ -4,6 +4,7 @@ import comp2 from './Comp2.png';
 import comp3 from './Comp3.png';
 import ellipse from './Ellipse.png';
 import map from './map.png';
+import loading from './loading.svg';
 
 
 export {
@@ -12,5 +13,6 @@ export {
     comp2,
     comp3,
     ellipse,
-    map
+    map,
+    loading
   };

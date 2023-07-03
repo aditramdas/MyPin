@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Loc.css";
-import { comp1, comp2, comp3, ellipse, map } from "./assets";
+import { comp1, comp2, comp3, ellipse, map, loading } from "./assets";
 import { useJsApiLoader, GoogleMap, MarkerF } from "@react-google-maps/api";
 import Geocode from "react-geocode";
 
@@ -53,7 +53,12 @@ function Loc() {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: apiKey,
   });
-  if (!isLoaded) return <div>Loading...</div>;
+  if (!isLoaded)
+    return (
+      <div className="loader">
+        <img src={loading} alt="Loading" />
+      </div>
+    );
 
   return (
     <div className="Loc">

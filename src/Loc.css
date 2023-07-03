@@ -3,7 +3,11 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+.loader{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20vh;
+}
 .Loc0{
     position: relative;
     width: 350px;
