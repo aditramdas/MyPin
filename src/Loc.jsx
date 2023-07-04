@@ -33,6 +33,9 @@ function Loc() {
       const addressArray = formattedAddress.split(" ");
 
       setPin(addressArray[addressArray.length - 2].slice(0, -1));
+      if (pin > 0 == false) {
+        addressArray[addressArray.length - 1];
+      }
       setAddress(addressArray.slice(1, 4));
       console.log(addressArray);
     } catch (error) {
