@@ -1,6 +1,6 @@
 # MyPin
 
-![Screenshot](SS MyPin.png)
+![Screenshot]("SS MyPin.png")
 
 MyPin is a tool used to know the exact pincode of the user's current location. 
 
